@@ -55,7 +55,7 @@ def do_research():
             ax.set_title(continuous_distribution[2] + ', sample size = ' + str(sample_size))
             ax.set_xlabel('Value')
             ax.set_ylabel('Density')
-            plt.savefig('Lab1/' + continuous_distribution[2] + '_' + str(sample_size))
+            plt.savefig('Lab1/pictures/' + continuous_distribution[2] + '_' + str(sample_size))
     for sample_size in sample_sizes:
         fig, ax = plt.subplots(1, 1)
         (sample,
@@ -66,4 +66,4 @@ def do_research():
         ax.set_xlabel('Value')
         ax.set_ylabel('Density')
         ax.plot(probability_density_points, probability_density_values)
-        plt.savefig('Lab1/Poisson distribution_' + str(sample_size))
+        plt.savefig('Lab1/pictures/Poisson distribution_' + str(sample_size))
